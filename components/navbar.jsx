@@ -101,7 +101,7 @@ export default function Navbar() {
                 {[
                   { href: "/", text: "About" },
                   { href: "/learn", text: "Learn" },
-                  { href: "/pricing", text: "Pricing" },
+                  // { href: "/pricing", text: "Pricing" },
                 ].map((link, index) => (
                   <motion.div
                     key={index}
