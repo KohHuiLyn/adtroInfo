@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
           href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Oswald:wght@200;300;400;500;600;700&family=Fredoka:wght@400;500;600&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
           rel="stylesheet"
         />
-              
+          <meta name="google-site-verification" content="R_6r-YlOHVr03WV-716355ftWMegP_NrZctneOV1dEI" />    
         {/* Add logo/favicons here */}
         <link rel="icon" href="/logo-1.png" type="image/x-icon" />
       </head>
