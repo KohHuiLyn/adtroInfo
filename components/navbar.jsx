@@ -59,13 +59,13 @@ export default function Navbar() {
 
             {/* Desktop Navigation */}
             <nav className="navigation-menu w-nav-menu hidden md:flex md:justify-end md:items-center">
-              <Link href="/" className="navigation-link w-nav-link px-5 py-5">
+              <Link href="/index.html" className="navigation-link w-nav-link px-5 py-5">
                 About
               </Link>
-              <Link href="/learn" className="navigation-link w-nav-link px-5 py-5">
+              {/* <Link href="/learn" className="navigation-link w-nav-link px-5 py-5">
                 Learn
-              </Link>
-              <Link href="/pricing" className="navigation-link w-nav-link px-5 py-5">
+              </Link> */}
+              <Link href="/pricing/index.html" className="navigation-link w-nav-link px-5 py-5">
                 Pricing
               </Link>
             </nav>
@@ -100,7 +100,7 @@ export default function Navbar() {
               >
                 {[
                   { href: "/", text: "About" },
-                  { href: "/learn", text: "Learn" },
+                  // { href: "/learn", text: "Learn" },
                   { href: "/pricing", text: "Pricing" },
                 ].map((link, index) => (
                   <motion.div
