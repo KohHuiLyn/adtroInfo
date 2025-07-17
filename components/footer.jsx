@@ -48,7 +48,7 @@ export default function Footer() {
         <h3 className="section-heading heading acknowledgements">Legal</h3>
         <p className="paragraph acknowledgements">
           {/* <Link href="https://www.privacypolicies.com/live/04f6f3fc-5401-4713-8d95-e4859deacef6" className="link text-[#9dd9f3]"> */}
-          <Link href="/privacyPolicy" className="link text-[#9dd9f3]">
+          <Link href="/termsOfUse" className="link text-[#9dd9f3]">
             Terms of Use
             <br />
             Privacy Policy
