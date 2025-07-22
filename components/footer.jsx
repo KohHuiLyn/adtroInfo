@@ -33,7 +33,7 @@ export default function Footer() {
       >
         <h3 className="section-heading heading acknowledgements">Contact Us</h3>
         <p className="paragraph acknowledgements">
-          Email: <span className="text-span-3">contact@adtro.com</span>
+          Email: <span className="text-span-3">business@adtromedia.com</span>
         </p>
       </motion.div>
 
@@ -46,12 +46,15 @@ export default function Footer() {
         transition={{ duration: 0.5, delay: 0.2 }}
       >
         <h3 className="section-heading heading acknowledgements">Legal</h3>
-        <p className="paragraph acknowledgements">
-          {/* <Link href="https://www.privacypolicies.com/live/04f6f3fc-5401-4713-8d95-e4859deacef6" className="link text-[#9dd9f3]"> */}
-          <Link href="/termsOfUse" className="link text-[#9dd9f3]">
-            Terms of Use
-            <br />
+        <p className="paragraph acknowledgements space-y-1">
+          <Link href="/termsOfService" className="link block text-[#9dd9f3]">
+            Terms of Service
+          </Link>
+          <Link href="/privacyPolicy" className="link block text-[#9dd9f3]">
             Privacy Policy
+          </Link>
+          <Link href="/paymentTerms" className="link block text-[#9dd9f3]">
+            Payment Terms
           </Link>
         </p>
       </motion.div>

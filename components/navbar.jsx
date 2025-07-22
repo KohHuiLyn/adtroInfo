@@ -68,6 +68,9 @@ export default function Navbar() {
               <Link href="/pricing" className="navigation-link w-nav-link px-5 py-5">
                 Pricing
               </Link>
+              {/* <Link href="/guide" className="navigation-link w-nav-link px-5 py-5">
+                Guide
+              </Link> */}
             </nav>
           </article>
         </div>
@@ -102,6 +105,7 @@ export default function Navbar() {
                   { href: "/", text: "About" },
                   // { href: "/learn", text: "Learn" },
                   { href: "/pricing", text: "Pricing" },
+                  // { href: "/guide", text: "Guide" },
                 ].map((link, index) => (
                   <motion.div
                     key={index}

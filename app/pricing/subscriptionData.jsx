@@ -54,65 +54,74 @@ export const getStreamerBundles = () => [
       ],
     },
   ];
-  export const getBrandBundles = () => [
+  
+export const getBrandBundles = (planType = "monthly") => {
+  const isYearly = planType === "yearly";
+
+  return [
     {
       id: 1,
-      name: "Brand Connect",
-      description: "For small businesses",
-      price: "SGD 149.99/mo",
-      trialText: "Try 14 days for SGD 0",
+      name: "Adtro+",
+      description: "Perfect for Small Businesses",
+      price: isYearly ? "SGD 2,335.80/year" : "SGD 229/month",
+      trialText: isYearly ? "14-day free trial" : "14-day free trial",
       isFreeTrial: true,
       features: [
-        { text: "1 outlet supported", available: true },
-        { text: "Inventory Management (Up to 100 SKUs)", available: true },
-        { text: "Access Creator List", available: true },
-        { text: "Basic Order System", available: true },
+        { text: "Supports 1 outlet", available: true },
+        { text: "Inventory management (up to 100 SKUs)", available: true },
+        { text: "Access to live streaming & marketing packages", available: true },
+        { text: "Basic order system", available: true },
+        { text: "Delivery integration", available: true },
         { text: "WhatsApp CRM (3 users)", available: true },
-        { text: "Pay-per-blast Promo Push", available: true },
-        { text: "Basic Order Analytics", available: true },
-        { text: "Booking System", available: false },
-        { text: "Email Support", available: true },
+        { text: "Pay-per-blast promo push", available: true },
+        { text: "Basic order analytics", available: true },
+        { text: "Up to 3 multistream accounts", available: true },
+        { text: "Email support", available: true },
       ],
     },
     {
       id: 2,
-      name: "Brand Growth",
-      description: "For growing businesses",
-      price: "SGD 399/mo",
-      trialText: "Subscribe now for SGD 39.99/mo",
+      name: "Adtro Pro",
+      description: "Designed for Growing Businesses",
+      price: isYearly ? "SGD 5,599.80/year" : "SGD 549/month",
+      trialText: "Contact us for onboarding",
       isFreeTrial: false,
       features: [
-        { text: "Up to 3 outlets supported", available: true },
-        { text: "Inventory Management (Up to 2,000 SKUs)", available: true },
-        { text: "Assign Campaigns to Creators", available: true },
-        { text: "Order System Integrated with CRM", available: true },
+        { text: "Supports up to 3 outlets", available: true },
+        { text: "Inventory management (up to 2,000 SKUs)", available: true },
+        { text: "Access to exclusive live streaming & marketing packages", available: true },
+        { text: "Advanced order system with customer data & lead integration", available: true },
         { text: "WhatsApp CRM (10 users)", available: true },
-        { text: "Pay-per-blast Promo Push", available: true },
+        { text: "Pay-per-blast promo push", available: true },
         { text: "Cross-outlet insights", available: true },
-        { text: "Advanced flow w/ POS integration", available: true },
-        { text: "Dedicated CSM + onboarding", available: true },
+        { text: "POS-integrated advanced workflow", available: true },
+        { text: "Dedicated CSM with onboarding support", available: true },
+        { text: "Built-in booking system", available: true },
+        { text: "Up to 10 multistream accounts", available: true },
       ],
     },
     {
       id: 3,
-      name: "Brand Enterprise",
-      description: "For large businesses",
+      name: "Adtro Biz",
+      description: "Tailored for Large Enterprises",
       price: "Custom Pricing",
       trialText: "Contact us for a quote",
       isFreeTrial: false,
       features: [
         { text: "Unlimited outlets", available: true },
-        { text: "Unlimited SKUs + API", available: true },
-        { text: "Private Streamer Network", available: true },
-        { text: "Full funnel tracking", available: true },
-        { text: "Custom roles + permissions", available: true },
-        { text: "Pay-per-blast (API integrated)", available: true },
-        { text: "Exportable + ROI dashboards", available: true },
-        { text: "Advanced flow w/ POS integration", available: true },
-        { text: "Dedicated CSM + onboarding", available: true },
+        { text: "Unlimited SKUs with full API integration", available: true },
+        { text: "Access to private streamer network", available: true },
+        { text: "Full-funnel performance tracking", available: true },
+        { text: "Custom roles & permission controls", available: true },
+        { text: "API-integrated pay-per-blast", available: true },
+        { text: "Exportable ROI dashboards", available: true },
+        { text: "POS-integrated advanced workflow", available: true },
+        { text: "Dedicated CSM with onboarding support", available: true },
       ],
     },
   ];
+};
+
   
 
     
@@ -141,38 +150,41 @@ export const getStreamerBundles = () => [
   
 
 export const brandComparison = {
-  title: "Brand Plans Comparison",
+  title: "Adtro Plan Features",
   columns: [
     "Feature",
-    "Brand Connect ($149/mo)",
-    "Brand Growth ($399/mo)",
-    "Brand Enterprise (Custom)"
+    "Adtro+ (S$229/mo)",
+    "Adtro Pro (S$549/mo)",
+    "Adtro Biz (Custom Pricing)"
   ],
   rows: [
     ["Outlets Supported", "1 outlet", "Up to 3 outlets", "Unlimited"],
-    ["Inventory Management", "Up to 100 SKUs", "Up to 2,000 SKUs", "Unlimited + API"],
-    ["Streamer Recruitment", "Access Creator List", "Assign Campaigns", "Private Streamer Network"],
-    ["Order System (FB/IG/YT)", "Basic", "Integrated with CRM", "Full funnel tracking"],
-    ["WhatsApp CRM", "3 users", "10 users", "Custom roles + permissions"],
-    ["Promo Push (WhatsApp)", "Pay-per-blast", "Pay-per-blast", "Pay-per-blast (API integrated)"],
-    ["Order Analytics", "Basic", "Cross-outlet insights", "Exportable + ROI dashboards"],
-    ["Booking System", false, "In-store & online bookings", "Advanced flow w/ POS integration"],
-    ["Support", "Email support", "Priority support", "Dedicated CSM + onboarding"]
+    ["Inventory Management", "Up to 100 SKUs", "Up to 2,000 SKUs", "Unlimited + API integration"],
+    ["Live Streaming & Marketing", "Access to exclusive packages", "Access to exclusive packages", "Private streamer network"],
+    ["Order System", "Basic order system", "Advanced, CRM-integrated", "Full-funnel performance tracking"],
+    ["Delivery Integration", "✅", "✅", "✅"],
+    ["WhatsApp CRM", "3 users", "10 users", "Custom roles & permissions"],
+    ["Promo Push (WhatsApp)", "Pay-per-blast", "Pay-per-blast", "API-integrated pay-per-blast"],
+    ["Order Analytics", "Basic analytics", "Cross-outlet insights", "Exportable ROI dashboards"],
+    ["Booking System", "❌", "Built-in system", "POS-integrated advanced flow"],
+    ["Multistream Accounts", "Up to 3 accounts", "Up to 10 accounts", "Custom limit"],
+    ["Support", "Email support", "Dedicated CSM + onboarding", "Dedicated CSM + onboarding"]
   ]
 };
 
+
 export const brandAddOns = {
-  title: "Add-Ons",
-  subtitle: "Enhance your plan with these additional features",
-  columns: ["Add-On", "Price", "Description"],
+  title: "Optional Add-Ons",
+  subtitle: "Enhance your plan with powerful extensions",
+  columns: ["Add-On", "Price", "Details"],
   rows: [
-    ["Extra CRM User", "$10/user/month", "Add additional users to your WhatsApp CRM"],
-    ["WhatsApp Message Credit", "$0.008–$0.015/message (volume-based)", "Credits for sending promotional messages via WhatsApp"],
-    ["API Access", "$99/month (or Enterprise)", "Connect your systems directly to our platform"],
-    ["Influencer Analytics Add-on", "$49–$99/month", "Advanced analytics for tracking influencer performance"],
-    ["Commission Engine", "$49/month (or Enterprise)", "Custom commission rules and management"]
+    ["Extra WhatsApp CRM User", "S$10/user/month", "Add more internal team members"],
+    ["Influencer Analytics Add-on", "S$49 – S$99/month", "Track campaign performance and creator ROI"],
+    ["Custom Integrations", "Custom Pricing", "Tailored API syncs, system integrations, or workflows"],
+    ["Enterprise Upgrades", "Custom Pricing", "Bespoke onboarding, features, and scalability options"]
   ]
 };
+
 
 export const streamerComparison = {
   title: "Creator Plans Comparison",
