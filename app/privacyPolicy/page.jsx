@@ -144,11 +144,46 @@ export default function PrivacyPolicyPage() {
               <li>Request a data copy by emailing <a href="mailto:business@adtromedia.com" className="underline text-[var(--accent-colour)]">business@adtromedia.com</a></li>
               <li>Request account deletion per Section 10</li>
             </ul>
+            <h2 className="font-bold mt-6">12. YouTube API Services</h2>
+            <p>
+              Our Services use YouTube API Services to enable livestreaming, analytics, and account integrations. 
+              By using features of our Platform that interact with YouTube, you agree to be bound by the {" "}
+              <a 
+                href="https://www.youtube.com/t/terms" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-[var(--accent-colour)] underline"
+              >
+                YouTube Terms of Service
+              </a>.
+            </p>
+            <p>
+              In addition, Google’s Privacy Policy applies to YouTube API Services. You can review it here: {"  "}
+              <a 
+                href="http://www.google.com/policies/privacy" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-[var(--accent-colour)] underline"
+              >
+                http://www.google.com/policies/privacy
+              </a>.
+            </p>
+            <p>
+              You may revoke our access to your YouTube data at any time via your  {" "}
+              <a 
+                href="https://security.google.com/settings/security/permissions" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-[var(--accent-colour)] underline"
+              >
+                Google security settings
+              </a>.
+            </p>
 
-            <h2 className="font-bold mt-6">12. Updates to This Policy</h2>
+            <h2 className="font-bold mt-6">13. Updates to This Policy</h2>
             <p>We may update this Privacy Policy periodically. Changes will be posted here, and material updates will be communicated via email or in-app notification. Your continued use after updates implies acceptance.</p>
 
-            <h2 className="font-bold mt-6">13. Contact Us</h2>
+            <h2 className="font-bold mt-6">14. Contact Us</h2>
             <p>If you have any questions or concerns about this Privacy Policy or how your data is handled, please reach out to:</p>
             <p className="mt-2">Adtro Media Pte. Ltd.</p>
             <p>Email: <a href="mailto:business@adtromedia.com" className="underline text-[var(--accent-colour)]">business@adtromedia.com</a></p>

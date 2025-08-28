@@ -50,6 +50,17 @@ export default function TermsOfServicePage() {
               <ul className="list-disc list-inside">
                 <li>Adtro enables sellers and brands to livestream to multiple platforms (e.g., TikTok, Facebook, YouTube, Shopee, Instagram) via our dashboard.</li>
                 <li>Use of third-party platforms is subject to their respective terms and policies.</li>
+                <li>
+                  By using YouTube through our Services, you also agree to be bound by the  {" "}
+                  <a 
+                    href="https://www.youtube.com/t/terms" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="text-[var(--accent-colour)] underline"
+                  >
+                    YouTube Terms of Service
+                  </a>.
+                </li>
                 <li>Adtro is not responsible for content moderation, stream takedowns, or platform-specific issues.</li>
                 <li>Users must ensure content complies with each platform’s community guidelines and advertising rules.</li>
               </ul>
